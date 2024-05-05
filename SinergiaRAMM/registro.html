@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/Logo2.png" type="image/x-icon">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
     <title>Registro</title>
 </head>
 <body>
+    <header>
+        <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+    
+                <a href="#" class="enlace">
+                    <img src="./img/Logo2.png" alt="" class="logo">
+                </a>
+    
+                <ul>
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="#quienes_somos">Nosotros</a></li>
+                <li><a href="#personajes">Personajes</a></li>
+                <li><a href="#">Juegos disponibles</a></li>
+                <li><a href="login.html">Registro/Inicio Sesión</a></li>
+                </ul>
+        </nav>
+    </header>
+    <section class="seccionlogin">
     <form action="" class="registro">
         <div class="form-container">
             <div class="col col-1">
@@ -19,7 +40,7 @@
             <div class="col col-2">
                 
                 <!-- Login Form Container -->
-                <div class="registrer-form">
+                <div class="register-form">
                     <div class="form-title">
                         <span>Registro</span>
                     </div>
@@ -34,6 +55,10 @@
                         </div>
                         <div class="input-box">
                             <input type="password" class="input-field" placeholder="Contraseña" required>
+                            <img src="icon/clave.png" alt="" class="icon">
+                        </div>
+                        <div class="input-box">
+                            <input type="password" class="input-field" placeholder="Confirmar contraseña" required>
                             <img src="icon/clave.png" alt="" class="icon">
                         </div>
                         <div class="terminos">
@@ -60,5 +85,6 @@
             </div>
         </div>
     </form>
+</section>
 </body>
 </html>

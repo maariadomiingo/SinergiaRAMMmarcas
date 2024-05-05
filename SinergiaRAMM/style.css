@@ -5,6 +5,14 @@
     list-style: none;
     box-sizing: border-box;
 }
+html{
+    /* Para que el scroll sea mas suavizado */
+    scroll-behavior: smooth;
+}
+section[id]{
+    /* para que no aparezca el borde exacto de la sección */
+    scroll-margin-top: 70px;
+}
 
 nav{
     background: #ff8be6;
@@ -50,7 +58,7 @@ li a.active, li a:hover{
 #check{
     display: none;
 }
-section{
+.Principal{
     background: url(fondo.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
@@ -103,10 +111,11 @@ body{
     background-repeat: no-repeat;
     background-size: 1500px 900px;
     
+    
 }
 
 .title{
-    margin-top: -32%;
+    margin-top: 10%;
     margin-left: 4%;
     font-size: 80px;
     color: black;
@@ -144,4 +153,368 @@ body{
 .trello, .git{
     margin-top: 2%;
    margin-left: 5%;
+}
+
+/* IMAGENES PERSONAJES */
+.personajes{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: -10%;
+}
+
+.img{
+    position: relative;
+    width: 200px;
+    height: 350px;
+    margin: 20px;
+
+}
+
+.img .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.img .front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px #000;
+}
+
+.img .none{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0px 5px 10px #000;
+}
+.img .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*Indica cómo el contenido de un elemento deberá ser redimensionado
+    para ajustarse a su contenedor */
+    object-fit: cover;
+
+}
+.img .front h2{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    background: rgb(0, 0, 0,0.4);
+    text-align: center;
+
+}
+
+.img .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px #000;
+}
+
+.img .back h3{
+   font-size: 30px;
+   margin-top: 30px;
+   letter-spacing: 2px;
+}
+.img .none h2{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    text-align: center;
+    transition: opacity 0.3s ease;   
+}
+
+.none a:hover{
+    opacity: 0.8;
+}
+
+.img .back p{   
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+ }
+
+.img:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.img:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/* SECCION QUIENES SOMOS */
+.quienes_somos{
+    position: relative;
+    margin-top: 20%;
+}
+
+.titlePrincipal{
+    text-align: center;
+    font-size: 50px;
+}
+.parrafo{
+    text-align: center;
+    padding: 50px 100px;
+}
+
+
+
+/* PAGINA LOGIN Y REGISTRO */
+.form-container{
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    margin: 5% 15%;
+
+}
+
+/* Primera columna */
+.col-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(30px);
+    border-radius: 0 30% 20% 0;
+    transition: border-radius .3s;
+
+}
+.image-layer{
+    position: relative;
+}
+.image-registro img{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-image-personaje{
+    width: 400px;
+    animation: scale-up 3s ease-in-out alternate infinite;
+}
+.form-image{
+    position: absolute;
+    left: 0;
+    width: 400px;
+}
+
+@keyframes scale-up{
+    to{
+        transform: scale(1.05);
+    }
+
+}
+
+/* Segunda Columna */
+.col-2{
+    position: relative;
+    width: 45%;
+    padding: 20px;
+}
+.btn-box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.btn{
+    font-weight: 500;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-1{
+    background-color: #21264D;
+}
+.btn.hover{
+    opacity: 0.85;
+}
+
+/* Login Form */
+.login-form{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 4vw;
+    transition: .3s;
+}
+/* Register Form */
+.register-form{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 4vw;
+    transition: .3s;
+}
+.register-form .form-title{
+    margin-block: 40px 20px;
+}
+.form-title{
+    margin: 50px 0;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+.register-form .form-title{
+    margin: 20px 0;
+}
+.form-inputs{
+    width: 100%;
+}
+.input-box{
+    position: relative;
+}
+.input-field{
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+    margin: 10px 0;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    /* para que no se marque la linea al pulsar en el cuadro de texto */
+    outline: none;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+::placeholder{
+    color: #fff;
+    font-size: 15px;
+}
+.input-box .icon{
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.forgot-pass a{
+    text-decoration: none;
+    color: #030304;
+    font-weight: bold;
+}
+.forgot-pass a:hover{
+    color: #fff;
+}
+.registro a{
+    text-decoration: none;
+    color: #030304;
+    font-weight: bold;
+}
+.registro a:hover{
+    color: #fff;
+}
+.login a{
+    text-decoration: none;
+    color: #030304;
+    font-weight: bold;
+}
+.login a:hover{
+    color: #fff;
+}
+.input-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+    margin: 10px 0;
+    color:#fff;
+    background: #21264D;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10 rgba(0, 0, 0, 0.2);
+   
+}
+.input-submit:hover{
+    background-color: cadetblue;
+}
+.social-login{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.social-login img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: .2s
+}
+.social-login img:hover{
+    transform: scale(0.9);
+}
+@media(max-width: 576px){
+    .form-container{
+        width: 400px;
+    }
+    .col-1{
+        display: none;
+    }
+    .col-2{
+        width: 100%;
+    }
 }

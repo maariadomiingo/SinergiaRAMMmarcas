@@ -4,56 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/Logo2.png" type="image/x-icon">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
 <body>
-    <div class="form-container">
-        <div class="col col-1">
-            <div class="image-layer">
-                <!-- <img src="img/Logo2.png" alt="" class="form-image logo"> -->
-                <img src="img/loginpersonaje.png" alt="" class="form-image-personaje">
-            </div>
-        </div>
-        <div class="col col-2">
-            
-            <!-- Login Form Container -->
-            <div class="login-form">
-                <div class="form-title">
-                    <span>Iniciar Sesión</span>
-                </div>
-                <div class="form-inputs">
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Usuario" required>
-                        <img src="icon/user.png" alt="" class="icon">
-                    </div>
-                    <div class="input-box">
-                        <input type="password" class="input-field" placeholder="Contraseña" required>
-                        <img src="icon/clave.png" alt="" class="icon">
-                    </div>
-                    <div class="forgot-pass">
-                        <a href="#">¿Olvidaste tu contraseña?</a>
-                    </div>
-                    <div class="registro">
-                        <p>¿No tiene una cuenta? <a class="link" href="registro.html">Registro</a></p>
-                    </div>
-                    <div class="input-box">
-                        <button class="input-submit">
-                            <span>Iniciar sesión</span>
-                            <img src="icon/sign.png" alt="" class="icon">
-                        </button>
-                    </div>
-                </div>
-                <div class="social-login">
-                    <!-- face -insta-twiter -->
-                    <a href="#"><img src="icon/face.png" alt=""></a>
-                    <a href="#"><img src="icon/insta.png" alt=""></a>
-                    <a href="#"><img src="icon/twiter.png" alt=""></a>
-                </div>
-            </div>
-
-        </div>
-    </div>
+    <header>
+        <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
     
+                <a href="#" class="enlace">
+                    <img src="./img/Logo2.png" alt="" class="logo">
+                </a>
+    
+                <ul>
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="#quienes_somos">Nosotros</a></li>
+                <li><a href="#personajes">Personajes</a></li>
+                <li><a href="#">Juegos disponibles</a></li>
+                <li><a href="login.html">Registro/Inicio Sesión</a></li>
+                </ul>
+        </nav>
+    </header>
+    <form action="" class="login">
+        <div class="form-container">
+            <div class="col col-1">
+                <div class="image-layer">
+                    <img src="img/loginpersonaje.png" alt="" class="form-image-personaje">
+                </div>
+            </div>
+            <div class="col col-2">
+                
+                <!-- Login Form Container -->
+                <div class="login-form">
+                    <div class="form-title">
+                        <span>Iniciar Sesión</span>
+                    </div>
+                    <div class="form-inputs">
+                        <div class="input-box">
+                            <input type="text" class="input-field" placeholder="Usuario" required>
+                            <img src="icon/user.png" alt="" class="icon">
+                        </div>
+                        <div class="input-box">
+                            <input type="password" class="input-field" placeholder="Contraseña" required>
+                            <img src="icon/clave.png" alt="" class="icon">
+                        </div>
+                        <div class="forgot-pass">
+                            <a href="#">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        <div class="registro">
+                            <p>¿No tiene una cuenta? <a class="link" href="registro.html">Registro</a></p>
+                        </div>
+                        <div class="input-box">
+                            <button class="input-submit">
+                                <span>Iniciar sesión</span>
+                                <img src="icon/sign.png" alt="" class="icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="social-login">
+                        <!-- face -insta-twiter -->
+                        <a href="#"><img src="icon/face.png" alt=""></a>
+                        <a href="#"><img src="icon/insta.png" alt=""></a>
+                        <a href="#"><img src="icon/twiter.png" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
 </body>
 </html>
