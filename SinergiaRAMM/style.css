@@ -7,6 +7,11 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body{
+    background-image: url(./img/fondo-wow.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 900px;
+}
 html{
     /* Para que el scroll sea mas suavizado */
     scroll-behavior: smooth;
@@ -71,12 +76,6 @@ li a.active, li a:hover{
     display: none;
 }
 
-body{
-    background-image: url(./img/fondo-wow.jpg);
-    background-repeat: no-repeat;
-    background-size: 1500px 900px;
-}
-
 .title{
     margin-top: 10%;
     margin-left: 4%;
@@ -97,7 +96,6 @@ body{
     margin-right: 92.3%;
     margin-left: 3%;
 }
-
 .logo2{
     position: relative;
     padding: auto;
@@ -105,13 +103,9 @@ body{
     width: 100px;
     height: 100px;
 }
-
-
 .links img{
     width: 3%;   
 }
-
-
 .trello, .git{
     margin-top: 2%;
    margin-left: 5%;
@@ -134,7 +128,7 @@ body{
 
 .img{
     position: relative;
-    width: 200px;
+    width: 230px;
     height: 350px;
     margin: 20px;
 
@@ -234,10 +228,10 @@ body{
     transform: perspective(600px) rotateY(360deg);
 }
 
-/* SECCION QUIENES SOMOS */
-.quienes_somos{
+/* SECCION NOSOTROS */
+.nosotros{
     position: relative;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .titlePrincipal{
@@ -263,6 +257,7 @@ body{
   margin: 4px 2px; 
   cursor: pointer; 
 }
+
 /*JUEGOS Y EXTENSIONES*/
 .juegos{
     position: relative;
@@ -281,7 +276,6 @@ body{
     overflow: hidden;
     transition: 0.5s;
 }
-
 .img .adelante{
     position: absolute;
     width: 100%;
@@ -300,7 +294,6 @@ body{
     /*Indica cómo el contenido de un elemento deberá ser redimensionado
     para ajustarse a su contenedor */
     object-fit: cover;
-
 }
 .img .adelante h2{
     position: absolute;
@@ -310,9 +303,7 @@ body{
     color: #fff;
     background: rgb(0, 0, 0,0.4);
     text-align: center;
-
 }
-
 .img .atras{
     transform: perspective(600px) rotateY(180deg);
     background: rgb(3, 35, 54);
@@ -324,7 +315,6 @@ body{
     text-align: center;
     box-shadow: 0px 5px 10px #000;
 }
-
 .img .atras h3{
    font-size: 30px;
    margin-top: 30px;
@@ -334,14 +324,13 @@ body{
     letter-spacing: 1px;
     margin-bottom: 100px;
  }
-
 .img:hover .adelante{
     transform: perspective(600px) rotateY(180deg);
 }
-
 .img:hover .atras{
     transform: perspective(600px) rotateY(360deg);
 }
+
 /*GALERIA*/
 .galeria{
     width: 100%;
@@ -389,17 +378,18 @@ body{
     opacity: 1;
     transform: scale(1);
 }
+
+
 /* PAGINA LOGIN Y REGISTRO */
 .form-container{
     display: flex;
     width: 1000px;
-    height: 600px;
+    height: 630px;
     border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 30px;
     backdrop-filter: blur(20px);
     overflow: hidden;
     margin: 5% 15%;
-
 }
 
 /* Primera columna */
@@ -413,7 +403,6 @@ body{
     backdrop-filter: blur(30px);
     border-radius: 0 30% 20% 0;
     transition: border-radius .3s;
-
 }
 .image-layer{
     position: relative;
@@ -446,29 +435,6 @@ body{
     position: relative;
     width: 45%;
     padding: 20px;
-}
-.btn-box{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-.btn{
-    font-weight: 500;
-    padding: 5px 30px;
-    border: none;
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: .2s;
-}
-.btn-1{
-    background-color: #21264D;
-}
-.btn.hover{
-    opacity: 0.85;
 }
 
 
@@ -580,7 +546,6 @@ body{
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 10 rgba(0, 0, 0, 0.2);
-   
 }
 .input-submit:hover{
     background-color: cadetblue;
@@ -607,6 +572,31 @@ body{
 }
 .social-login img:hover{
     transform: scale(0.9);
+}
+
+/* PAGINA MAS INFO */
+.masinfo{
+    position: relative;
+    display:flex;
+    width: 800px;
+    height: 600px;
+    background-color:#fff;
+    margin: 10% 20%;
+    border-radius: 10px;
+    opacity: 0.8;
+    flex-direction: column;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.mision{
+    position: relative;
+
+    height: 300px;
+}
+.historia{
+    position: relative;
+
+    height: 300px;
 }
 @media(max-width: 576px){
     .form-container{
