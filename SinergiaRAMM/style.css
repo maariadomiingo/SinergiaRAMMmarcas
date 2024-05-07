@@ -342,7 +342,53 @@ body{
 .img:hover .atras{
     transform: perspective(600px) rotateY(360deg);
 }
-
+/*GALERIA*/
+.galeria{
+    width: 100%;
+    margin: 0 auto;
+}
+.contenedor_cards::after{
+    /*AFTER para que el contenedor muestre elementos aunque estos sean flotantes, es para que se vayan como esocndiendo*/
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+    /*CLEAR para que los elementos queden juntos*/
+}
+.contenedor_cards{
+    width: 90%;
+    margin: 0 9%;
+}
+/*Estructura de cada componente de la galeria (imagen+descripcion)*/
+.contenedor_cards div{
+    width: 28%;
+    height: auto;
+    display: inline;
+    float: left;
+    margin: 0% 3% 0% 0%;
+    padding: 0px;
+}
+.contenedor_cards div img{
+    width: 100%;
+    height: 350px;
+    box-shadow: 0 0 10px pink;
+    border: 5px solid #fff;
+}
+/*Se muestra la descripcion al posicionar el cursor encima de la imagen*/
+.contenedor_cards div img:hover{
+    opacity: 1;
+}
+/*Establecemos el comportamiento que tendran las imagenes al posicionar el cursor encima del contenedor*/
+.contenedor_cards:hover div{
+    opacity: 0.2;
+    transform: scale(0.5);
+    transition: 2s;
+}
+/*Especificar el comportamiento que tendra la imagen seleccionada*/
+.contenedor_cards:hover div:hover{
+    opacity: 1;
+    transform: scale(1);
+}
 /* PAGINA LOGIN Y REGISTRO */
 .form-container{
     display: flex;
