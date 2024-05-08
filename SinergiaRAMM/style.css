@@ -267,27 +267,25 @@ li a.active, li a:hover{
     text-align: center;
     font-size: 50px;
 }
-.img .adelante{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 0.5s;
+.img_juegos{
+  
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
 }
-.img .adelante{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 0.5s;
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0px 5px 10px #000;
+.img_juegos .img{
+    width: 300px;
+    height: 450px;
+    
 }
-.img .adelante img{
+.img_juegos .img img{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -295,42 +293,11 @@ li a.active, li a:hover{
     para ajustarse a su contenedor */
     object-fit: cover;
 }
-.img .adelante h2{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 45px;
-    color: #fff;
-    background: rgb(0, 0, 0,0.4);
-    text-align: center;
+.img .front h2{
+    bottom: 15px;
+    font-size:
+     20px;
 }
-.img .atras{
-    transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
-    padding: 15px;
-    color: #f3f3f3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    box-shadow: 0px 5px 10px #000;
-}
-.img .atras h3{
-   font-size: 30px;
-   margin-top: 30px;
-   letter-spacing: 2px;
-}
-.img .atras p{   
-    letter-spacing: 1px;
-    margin-bottom: 100px;
- }
-.img:hover .adelante{
-    transform: perspective(600px) rotateY(180deg);
-}
-.img:hover .atras{
-    transform: perspective(600px) rotateY(360deg);
-}
-
 /*GALERIA*/
 .galeria{
     width: 100%;
