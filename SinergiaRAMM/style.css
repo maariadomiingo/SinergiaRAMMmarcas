@@ -247,6 +247,7 @@ li a.active, li a:hover{
 .boton{
   position: absolute;
   left: 650px;
+  
   background-color: #40536B; 
   border: 1px #40536B solid;
   border-radius: 20px;
@@ -257,6 +258,10 @@ li a.active, li a:hover{
   font-size: 16px; 
   margin: 4px 2px; 
   cursor: pointer; 
+}
+
+.boton a{
+    color: #fff;
 }
 
 /*JUEGOS Y EXTENSIONES*/
