@@ -7,6 +7,11 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+<<<<<<< Updated upstream
+=======
+/* PRUEBA RAMA MAIN */
+/* viva el peru */
+>>>>>>> Stashed changes
 body{
     background-image: url(./img/fondo-wow.jpg);
     background-repeat: no-repeat;
