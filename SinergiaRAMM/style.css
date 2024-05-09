@@ -11,6 +11,7 @@ body{
     background-image: url(./img/fondo-wow.jpg);
     background-repeat: no-repeat;
     background-size: 1500px 900px;
+    /* nuevos cambios */
 }
 html{
     /* Para que el scroll sea mas suavizado */
