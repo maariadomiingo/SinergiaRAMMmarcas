@@ -9,7 +9,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* PRUEBA RAMA MAIN */
-
+/*peru ano*/
 /* HELLO RICARDO */
 body{
     background-image: url(./img/fondo-wow.jpg);
@@ -309,6 +309,7 @@ li a.active, li a:hover{
      20px;
 }
 /*GALERIA*/
+
 .galeria{
     width: 100%;
     margin: 0 auto;
