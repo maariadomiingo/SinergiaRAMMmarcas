@@ -258,6 +258,9 @@ li a.active, li a:hover{
   margin: 4px 2px; 
   cursor: pointer; 
 }
+.boton a{
+    color: red;
+}
 
 /*JUEGOS Y EXTENSIONES*/
 .juegos{
