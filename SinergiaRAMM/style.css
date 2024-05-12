@@ -1,4 +1,5 @@
 /*NUEVA PALETA DE COLORES --> blond: #FAF8BD; marron: #B27943; gris: #8E8382; azul: #40536B; negro #171715*/
+/*cambio maria */
 *{
     padding: 0px;
     margin: 0px;
@@ -7,14 +8,17 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 /* PRUEBA RAMA MAIN */
-/* viva el peru */
-
+/*peru ano*/
+/* HELLO RICARDO */
 body{
+    margin: 0;
+    padding: 0;
     background-image: url(./img/fondo-wow.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-size: 1500px 900px;
+    /* nuevos cambios */
 }
 html{
     /* Para que el scroll sea mas suavizado */
@@ -308,6 +312,7 @@ li a.active, li a:hover{
      20px;
 }
 /*GALERIA*/
+
 .galeria{
     width: 100%;
     margin: 0 auto;
