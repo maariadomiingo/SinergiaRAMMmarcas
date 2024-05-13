@@ -250,7 +250,7 @@ li a.active, li a:hover{
 }
 .boton{
   position: absolute;
-  left: 550px;
+  left: 650px;
   
   background-color: #40536B; 
   border: 1px #40536B solid;
@@ -266,7 +266,7 @@ li a.active, li a:hover{
 
 .boton2{
     position: absolute;
-    left: 800px;
+    left: 750px;
     
     background-color: #40536B; 
     border: 1px #40536B solid;
