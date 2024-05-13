@@ -279,7 +279,7 @@ li a.active, li a:hover{
     cursor: pointer; 
   }
 
-.boton a, .boton2 a{
+.boton a{
     color: #fff;
 }
 
