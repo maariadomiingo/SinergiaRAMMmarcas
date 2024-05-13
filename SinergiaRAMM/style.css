@@ -287,6 +287,9 @@ li a.active, li a:hover{
   margin: 4px 2px; 
   cursor: pointer; 
 }
+.boton a{
+    color: red;
+}
 
 .boton a{
     color: #fff;
@@ -583,26 +586,57 @@ li a.active, li a:hover{
 .masinfo{
     position: relative;
     display:flex;
+    margin: 10% auto;
     width: 800px;
     height: 600px;
     background-color:#fff;
-    margin: 10% 20%;
+    /* margin: 10% 20%; */
     border-radius: 10px;
-    opacity: 0.8;
+    opacity: 0.9;
     flex-direction: column;
     padding: 5%;
     box-sizing: border-box;
+    width: 70%;
 }
 .mision{
     position: relative;
-
+    width: 80%;
+    margin: 2% auto;
     height: 300px;
 }
 .historia{
     position: relative;
-
+    width: 80%;
+    margin: 2% auto;
     height: 300px;
 }
+.imagemision img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: right;
+    opacity: 1;
+}
+.parrafo1{
+    width: 60%;
+    float: left;
+    
+}
+.imagehistoria img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    opacity: 1;
+    
+}
+.parrafo2{
+    width: 60%;
+    float: right;
+}
+
 @media(max-width: 576px){
     .form-container{
         width: 400px;
