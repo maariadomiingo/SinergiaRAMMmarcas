@@ -104,7 +104,7 @@ li a.active, li a:hover {
 .logo{
     border-radius: 5%;
     margin-right: 92.3%;
-    margin-left: 80px;
+    margin-left: -10px;
 }
 .logo2{
     position: relative;

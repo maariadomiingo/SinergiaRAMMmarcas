@@ -23,88 +23,99 @@ body{
     height: 100%;
     
 }
-.header {
+.header{
     z-index: 10;
     position: fixed;
-    width: 100%;
-    display: flex;
-    align-items: center;
+}
+html{
+    /* Para que el scroll sea mas suavizado */
+    scroll-behavior: smooth;
+}
+section[id]{
+    /* para que no aparezca el borde exacto de la sección */
+    scroll-margin-top: 70px;
+}
+
+nav{
+    
+    position: fixed;
+    left: 190px;
+    top: -0px;
     background: #171715;
     height: 75px;
-    top: 0;
-    left: 0;
-    padding-left: 10px; /* Asegura un pequeño espacio a la izquierda */
+    width: 90%;
 }
-.enlace {
-    display: flex;
-    align-items: center;
-    height: 75px;
-    padding: 0; /* Eliminar padding */
-    margin: 0;  /* Eliminar margen */
+.enlace{
+    position: fixed;
+    border-radius: 20px;
+    background: #171715;
+    height: 80px;
+    left: 40px;
+    top: -0px;
+    padding: 20px 50px;
 }
-.logo {
+.logo{
     height: 50px;
-    border-radius: 5%;
-    margin: 0; /* Eliminar margen */
-    padding: 0; /* Eliminar padding */
+    
 }
-nav {
-    display: flex;
-    align-items: center;
-    margin-left: auto; /* Para empujar el nav a la derecha */
-    height: 75px;
+nav ul{
+    float: right;
+    margin-right: 20px;
 }
-nav ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-nav ul li {
+nav ul li{
     display: inline-block;
-    line-height: 75px;
-    margin: 0 10px; /* Ajustar el margen entre los elementos del menú */
+    line-height: 80px;
+    margin: 0 5px;
 }
-nav ul li a {
+nav ul li a{
     color: #fff;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
 }
-li a.active, li a:hover {
+li a.active, li a:hover{
     background: #40536B;
     transition: .5s;
 }
-.checkbtn {
+.checkbtn{
     font-size: 30px;
     color: #fff;
-    display: none; /* Se muestra solo en pantallas pequeñas */
-}
-#check {
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
     display: none;
 }
-.title {
+#check{
+    display: none;
+}
+
+.title{
     margin-top: 10%;
     margin-left: 4%;
     font-size: 50px;
     color: whitesmoke; 
     font-weight: bold;
+    color: #fff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
-.subtitle {
+
+.subtitle{
     margin-top: 1%;
     margin-left: 4%;
     margin-bottom: 20px;
     font-size: 20px;
     color: whitesmoke;
     font-weight: bold;
+    color: #fff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 /*div del logo de arriba a la izq*/
 .logo{
     border-radius: 5%;
     margin-right: 92.3%;
-    margin-left: 80px;
+    margin-left: 3%;
 }
 .logo2{
     position: relative;
