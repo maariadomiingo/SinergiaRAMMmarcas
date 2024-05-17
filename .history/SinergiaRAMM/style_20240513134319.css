@@ -9,23 +9,13 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* PRUEBA RAMA MAIN */
-/*peru ano*/
+
 /* HELLO RICARDO */
 body{
-    margin: 0;
-    padding: 0;
     background-image: url(./img/fondo-wow.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-    
-}
-.header{
-    z-index: 10;
-    position: fixed;
+    background-size: 1500px 900px;
+    /* nuevos cambios */
 }
 html{
     /* Para que el scroll sea mas suavizado */
@@ -96,9 +86,6 @@ li a.active, li a:hover{
     margin-left: 4%;
     font-size: 50px;
     color: whitesmoke; 
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .subtitle{
@@ -107,9 +94,6 @@ li a.active, li a:hover{
     margin-bottom: 20px;
     font-size: 20px;
     color: whitesmoke;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 /*div del logo de arriba a la izq*/
 .logo{
@@ -125,8 +109,7 @@ li a.active, li a:hover{
     height: 100px;
 }
 .links img{
-    width: 3%;
-    color: #fff;
+    width: 3%;   
 }
 .trello, .git{
     margin-top: 2%;
@@ -146,7 +129,6 @@ li a.active, li a:hover{
     background-attachment: fixed;
     background-size: 100% 100%;
     position: relative;
-    margin-top: -300px;
 }
 
 .img{
@@ -260,21 +242,15 @@ li a.active, li a:hover{
 .titlePrincipal{
     text-align: center;
     font-size: 50px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 .parrafo{
     text-align: center;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     padding: 50px 100px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .boton{
   position: absolute;
-  left: 550px;
+  left: 650px;
   
   background-color: #40536B; 
   border: 1px #40536B solid;
@@ -287,13 +263,11 @@ li a.active, li a:hover{
   margin: 4px 2px; 
   cursor: pointer; 
 }
-.boton a{
-    color: red;
-}
 
 .boton2{
     position: absolute;
-    left: 800px;
+    left: 650px;
+    
     background-color: #40536B; 
     border: 1px #40536B solid;
     border-radius: 20px;
@@ -306,7 +280,7 @@ li a.active, li a:hover{
     cursor: pointer; 
   }
 
-.boton a, .boton2 a{
+.boton a{
     color: #fff;
 }
 
@@ -318,9 +292,6 @@ li a.active, li a:hover{
 .ti_juegos{
     text-align: center;
     font-size: 50px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 .img_juegos{
   
@@ -354,7 +325,6 @@ li a.active, li a:hover{
      20px;
 }
 /*GALERIA*/
-
 .galeria{
     width: 100%;
     margin: 0 auto;
@@ -601,57 +571,26 @@ li a.active, li a:hover{
 .masinfo{
     position: relative;
     display:flex;
-    margin: 10% auto;
     width: 800px;
     height: 600px;
     background-color:#fff;
-    /* margin: 10% 20%; */
+    margin: 10% 20%;
     border-radius: 10px;
-    opacity: 0.9;
+    opacity: 0.8;
     flex-direction: column;
     padding: 5%;
     box-sizing: border-box;
-    width: 70%;
 }
 .mision{
     position: relative;
-    width: 80%;
-    margin: 2% auto;
+
     height: 300px;
 }
 .historia{
     position: relative;
-    width: 80%;
-    margin: 2% auto;
+
     height: 300px;
 }
-.imagemision img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    float: right;
-    opacity: 1;
-}
-.parrafo1{
-    width: 60%;
-    float: left;
-    
-}
-.imagehistoria img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    float: left;
-    opacity: 1;
-    
-}
-.parrafo2{
-    width: 60%;
-    float: right;
-}
-
 @media(max-width: 576px){
     .form-container{
         width: 400px;
