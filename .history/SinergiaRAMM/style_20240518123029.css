@@ -6,6 +6,7 @@
     --padding_left_right: 2rem;
     --ancho_maximo: 1200px;
 }
+
 *{
     padding: 0px;
     margin: 0px;
@@ -14,9 +15,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/* PRUEBA RAMA MAIN */
-/*peru ano*/
-/* HELLO RICARDO */
+
 body{
     margin: 0;
     padding: 0;
@@ -31,15 +30,7 @@ body{
 }
 .header {
     height: var(--altura_header);
-    z-index: 10;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background: #171715;
-    top: 0;
-    left: 0;
-    padding-left: 10px; /* Asegura un pequeño espacio a la izquierda */
+    background-color: var(--color_primario);
 }
 
 a{
@@ -48,41 +39,25 @@ a{
 ol,ul{
     list-style: none;
 }
-
-.enlace {
-    display: flex;
-    align-items: center;
-    height: 75px;
-    padding: 0; /* Eliminar padding */
-    margin: 0;  /* Eliminar margen */
-}
-a .logo {
-    height: 50px;
-    border-radius: 5%;
-    margin: 0; /* Eliminar margen */
-    padding: 0; /* Eliminar padding */
-    position: relative;
-    left: -1000%;
-}
-nav {
+.navbar {
     height: 100%;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     padding: 0 var(--padding_left_right);
-    display: flex;
-    align-items: center;
-    margin-left: auto; /* Para empujar el nav a la derecha */
-    
 }
-/*para que no salga para seleccionar el checkbox*/
 .menu_hamburguesa{
     display: none;
 }
-
 .menu_hamburguesa:checked + .ul_links {
     height: calc(100vh - var(--altura_header));
 }
-
+.logo {
+    color: var(--color_blanco);
+}
+.labe_hamburguesa {
+}
 .list_icon {
     color: var(--color_blanco);
     cursor: pointer;
@@ -95,6 +70,7 @@ nav {
     left: 0;
     height: 0;
     overflow: hidden;
+    /* height: calc(100vh - var(--altura_header)); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,18 +78,28 @@ nav {
     gap: 3rem;
 
     transition: all .3s;
-
 }
-
+.li_links {
+}
 .link {
-    font-size: 1.2em;
+    font-size: 3em;
+    color: var(--color_blanco);
     font-weight: bold;
-    line-height: 75px;
-    color: #fff;
-    border-radius: 3px;
-    text-transform: uppercase;
 }
-/*HASTA AQUÍ LOS ELEMENTOS DEL MENÚ*/
+/*HASTA AQUÍ EL MENÚ RESPONSIVE */
+.enlace {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    padding: 0; /* Eliminar padding */
+    margin: 0;  /* Eliminar margen */
+}
+.logo {
+    height: 50px;
+    border-radius: 5%;
+    margin: 0; /* Eliminar margen */
+    padding: 0; /* Eliminar padding */
+}
 
 
 .title {
@@ -691,14 +677,15 @@ nav {
 }
 
 
+/*@media PARA EL MENÚ RESPONSIVE */
 @media (min-width:768px){
     .labe_hamburguesa {
         display: none;
     }
-    .ul_links {
+    .ul_links{
         position: static;
-        width: 1200px;
-        height: 80px;
+        width: auto;
+        height: auto;
         flex-direction: row;
         gap: 2rem;
     }

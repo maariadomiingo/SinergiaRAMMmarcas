@@ -62,7 +62,7 @@ a .logo {
     margin: 0; /* Eliminar margen */
     padding: 0; /* Eliminar padding */
     position: relative;
-    left: -1000%;
+    left: -1600%;
 }
 nav {
     height: 100%;
@@ -701,6 +701,9 @@ nav {
         height: 80px;
         flex-direction: row;
         gap: 2rem;
+    }
+    .menu_hamburguesa {
+        display: none; /* Ocultar el menú hamburguesa */
     }
     .link{
         font-size: 1.2rem;

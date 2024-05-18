@@ -62,7 +62,7 @@ a .logo {
     margin: 0; /* Eliminar margen */
     padding: 0; /* Eliminar padding */
     position: relative;
-    left: -1000%;
+    left: -1600%;
 }
 nav {
     height: 100%;
@@ -106,7 +106,7 @@ nav {
 }
 
 .link {
-    font-size: 1.2em;
+    font-size: 3em;
     font-weight: bold;
     line-height: 75px;
     color: #fff;
@@ -697,8 +697,8 @@ nav {
     }
     .ul_links {
         position: static;
-        width: 1200px;
-        height: 80px;
+        width: auto;
+        height: auto;
         flex-direction: row;
         gap: 2rem;
     }

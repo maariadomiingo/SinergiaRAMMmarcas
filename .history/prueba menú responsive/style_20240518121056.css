@@ -1,0 +1,130 @@
+:root {
+    --color_primario: #171715;
+    --color_primario_suave:  #2a2a2a; /* Ajuste de color suave para mayor contraste */
+    --color_blanco: #fff;
+    --altura_header: 80px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.header {
+    height: var(--altura_header);
+    background-color: var(--color_primario);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añadir sombra para mayor profundidad */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(--padding_left_right);
+    max-width: var(--ancho_maximo);
+    margin: 0 auto;
+}
+
+.menu_hamburguesa {
+    display: none;
+}
+
+.menu_hamburguesa:checked + .ul_links {
+    height: calc(100vh - var(--altura_header));
+}
+
+.logo {
+    color: var(--color_blanco);
+}
+
+.list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.list_icon:hover {
+    color: #ddd; /* Efecto hover para el icono */
+}
+
+.ul_links {
+    width: 100%;
+    background-color: var(--color_primario_suave);
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    transition: height 0.3s ease;
+}
+
+.li_links {
+    text-align: center; /* Centrar el texto */
+}
+
+.link {
+    font-size: 2.5em;
+    color: var(--color_blanco);
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s, padding 0.3s, border-radius 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px; /* Aplicar border-radius por defecto */
+}
+
+.link:hover {
+    background-color: #40536B; /* Ajustar el color del fondo en hover */
+    color: #fff; /* Asegurarse de que el texto sea legible en hover */
+    padding: 0.7rem 1.2rem; /* Aumentar el tamaño de la caja */
+    border-radius: 10px; /* Aumentar el border-radius en hover */
+}
+
+@media (min-width: 768px) {
+    .labe_hamburguesa {
+        display: none;
+    }
+    
+    .ul_links {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+        background-color: transparent; /* Eliminar el fondo en vista de escritorio */
+    }
+    
+    .link {
+        font-size: 1.2rem;
+        transition: all 0.3s;
+        padding: 0.2rem 0.7rem;
+        border-radius: 5px; /* Aplicar border-radius por defecto */
+    }
+    
+    .link:hover {
+        background-color: #40536B;
+        color: var(--color_blanco);
+        padding: 0.4rem 1rem; /* Aumentar el tamaño de la caja en hover */
+        border-radius: 10px; /* Aumentar el border-radius en hover */
+    }
+}

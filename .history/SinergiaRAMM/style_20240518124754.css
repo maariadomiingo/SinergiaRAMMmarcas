@@ -56,13 +56,11 @@ ol,ul{
     padding: 0; /* Eliminar padding */
     margin: 0;  /* Eliminar margen */
 }
-a .logo {
+.logo {
     height: 50px;
     border-radius: 5%;
     margin: 0; /* Eliminar margen */
     padding: 0; /* Eliminar padding */
-    position: relative;
-    left: -1000%;
 }
 nav {
     height: 100%;
@@ -74,15 +72,18 @@ nav {
     margin-left: auto; /* Para empujar el nav a la derecha */
     
 }
-/*para que no salga para seleccionar el checkbox*/
+
 .menu_hamburguesa{
     display: none;
 }
-
 .menu_hamburguesa:checked + .ul_links {
     height: calc(100vh - var(--altura_header));
 }
-
+.logo {
+    color: var(--color_blanco);
+}
+.labe_hamburguesa {
+}
 .list_icon {
     color: var(--color_blanco);
     cursor: pointer;
@@ -106,16 +107,28 @@ nav {
 }
 
 .link {
-    font-size: 1.2em;
+    font-size: 3em;
     font-weight: bold;
     line-height: 75px;
     color: #fff;
     border-radius: 3px;
     text-transform: uppercase;
 }
-/*HASTA AQUÍ LOS ELEMENTOS DEL MENÚ*/
 
 
+
+li a.active, li a:hover {
+    background: #40536B;
+    transition: .5s;
+}
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    display: none; /* Se muestra solo en pantallas pequeñas */
+}
+#check {
+    display: none;
+}
 .title {
     margin-top: 10%;
     margin-left: 4%;
@@ -695,10 +708,10 @@ nav {
     .labe_hamburguesa {
         display: none;
     }
-    .ul_links {
+    .ul_links{
         position: static;
-        width: 1200px;
-        height: 80px;
+        width: auto;
+        height: auto;
         flex-direction: row;
         gap: 2rem;
     }
