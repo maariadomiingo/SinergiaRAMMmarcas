@@ -416,7 +416,7 @@ nav {
 
 .galeria{
     width: 100%;
-    margin: 10% auto;
+    margin: 0 auto;
 }
 
 /*Descripcion imagenes*/
@@ -428,8 +428,8 @@ nav {
     margin: 0;
     padding: 2px 5px;
     color: #fff;
-    background: plum;
-    box-shadow: 0 0 10px paleturquoise;
+    background: rgb(255, 90, 1);
+    box-shadow: 0 0 10px rgb(226, 53, 0);
     text-align: center;
 }
 
@@ -461,11 +461,22 @@ nav {
 .contenedor_cards div img{
     width: 100%;
     height: 350px;
-    box-shadow: 0 0 10px pink;
+    box-shadow: 0 0 10px rgb(243, 113, 0);
     border: 5px solid #fff;
 }
+.contenedor_cards div img~span{
+    width: 100%;
+    display: block;
+    opacity: 0;
+    margin: 0;
+    padding: 2px 5px;
+    color: #fff;
+    background: rgb(210, 71, 33);
+    box-shadow: 0 0 10px paleturquoise;
+    text-align: center;
+}
 /*Se muestra la descripcion al posicionar el cursor encima de la imagen*/
-.contenedor_cards div img:hover{
+.contenedor_cards div img:hover+span{
     opacity: 1;
 }
 /*Establecemos el comportamiento que tendran las imagenes al posicionar el cursor encima del contenedor*/
@@ -479,6 +490,8 @@ nav {
     opacity: 1;
     transform: scale(1);
 }
+
+
 
 
 /* PAGINA LOGIN Y REGISTRO */
@@ -810,7 +823,48 @@ nav {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
+/*Pagina Terminos y condiciones*/
+.terminos{
+    margin: 0 0 0 60px;
+    padding: 0;
+    background:whitesmoke;
+}
+.div_terminos{
+    position: relative;
+    left: 100px;
+    text-align:justify;
+    color: black;
+    padding: 50px 100px;
+    width: 1200px;
+    height: 800px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.title_ter{
+    color: #132298;
+}
+.title_1{
+    color: #132298;
+    text-align: center;
+}
+.legal{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+}
+#Aceptar{
+    position: relative;
+    left: 500px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: green;
+}
+.acepto{
+    position: relative;
+    top: 50px;
+    font-weight: bold;
+}
 /*RESPONSIVE*/
 
 @media(max-width: 576px){
