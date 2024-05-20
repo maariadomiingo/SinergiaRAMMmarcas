@@ -120,6 +120,11 @@ nav {
     border-radius: 3px;
     text-transform: uppercase;
 }
+
+.urlblanco{
+    color: #fff;
+    font-weight: bold;
+}
 /*HASTA AQUÍ LOS ELEMENTOS DEL MENÚ*/
 
 .Principal{
@@ -408,8 +413,27 @@ nav {
 
 .galeria{
     width: 100%;
-    margin: 0 auto;
+    margin: 10% auto;
 }
+
+/*Descripcion imagenes*/
+
+.galeria .contenedor_cards  .img~span{
+    width: 100%;
+    display: block;
+    opacity: 0;
+    margin: 0;
+    padding: 2px 5px;
+    color: #fff;
+    background: plum;
+    box-shadow: 0 0 10px paleturquoise;
+    text-align: center;
+}
+
+.container div img:hover+span{
+    opacity: 1;
+}
+
 .contenedor_cards::after{
     /*AFTER para que el contenedor muestre elementos aunque estos sean flotantes, es para que se vayan como esocndiendo*/
     content: "";
