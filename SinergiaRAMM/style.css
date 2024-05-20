@@ -181,15 +181,14 @@ nav {
     font-size: 30px;
     background-color: #000;
     color:#fff;
-}
-.caja2{
-    margin-left: 10%;
-}
-.textocaja{
     padding: 10px;
     box-sizing: border-box;
     margin-top: 10%;
 }
+.caja2{
+    margin-left: 10%;
+}
+
 
 /* IMAGENES PERSONAJES */
 .personajes{
@@ -332,9 +331,9 @@ nav {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
     padding: 50px 100px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-
-
 }
+
+
 .boton{
   position: absolute;
   left: 36%;
@@ -825,6 +824,17 @@ nav {
     }
     .imagecuadro img{
         display: none
+    }
+    .loremEliminar{
+        display: none;
+    }
+    .Principal{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+    .personajes{
+        top: 300px;
     }
 }
 @media (max-width: 952px){
