@@ -69,7 +69,7 @@ a .logo {
     margin: 0; /* Eliminar margen */
     padding: 0; /* Eliminar padding */
     position: relative;
-    left: -1000%;
+    
 }
 nav {
     height: 100%;
@@ -154,6 +154,8 @@ nav {
     border-radius: 5%;
     margin-right: 92.3%;
     margin-left: 80px;
+    z-index: 10;
+    position: fixed;
 }
 .logo2{
     position: relative;
@@ -181,7 +183,7 @@ nav {
     color:#fff;
 }
 .caja2{
-    
+    margin-left: 10%;
 }
 .textocaja{
     padding: 10px;
@@ -313,6 +315,7 @@ nav {
     margin-top: 200px;
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(30px);
+    border: 1px solid black;
 }
 
 .titlePrincipal{
